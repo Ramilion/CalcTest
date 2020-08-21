@@ -32,9 +32,7 @@ public class ExampleUnitTest {
     @Test
     //Сумма (0+0)
     public void testAddition() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+        
         clickToLeftField();
 
         setToLeftField("0");
@@ -45,7 +43,7 @@ public class ExampleUnitTest {
 
         clickToAddition();
 
-        MobileElement results = (MobileElement) driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
+        results = driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
 
         assertion(results, "0,00 + 0,00 = 0,00", "Результат должен быть равен: 0");
 
@@ -54,9 +52,7 @@ public class ExampleUnitTest {
     }
     //Сумма (0+1)
     public void testAddition1() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+  
         clickToLeftField();
 
         setToLeftField("0");
@@ -67,7 +63,7 @@ public class ExampleUnitTest {
 
         clickToAddition();
 
-        MobileElement results = (MobileElement) driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
+        results = driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
 
         assertion(results, "0,00 + 1,00 = 1,00", "Результат должен быть равен: 1");
 
@@ -77,9 +73,7 @@ public class ExampleUnitTest {
 
     //Сумма (1+0)
     public void testAddition2() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+   
         clickToLeftField();
 
         setToLeftField("1");
@@ -90,7 +84,7 @@ public class ExampleUnitTest {
 
         clickToAddition();
 
-        MobileElement results = (MobileElement) driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
+        results = driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
 
         assertion(results, "1,00 + 0,00 = 1,00", "Результат должен быть равен: 1");
 
@@ -100,9 +94,7 @@ public class ExampleUnitTest {
 
     //Сумма (0,5+0,5)
     public void testAddition3() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+ 
         clickToLeftField();
 
         setToLeftField("0.5");
@@ -113,7 +105,7 @@ public class ExampleUnitTest {
 
         clickToAddition();
 
-        MobileElement results = (MobileElement) driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
+        results = t) driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
 
         assertion(results, "0,50 + 0,50 = 1,00", "Результат должен быть равен: 1");
 
@@ -167,9 +159,7 @@ public class ExampleUnitTest {
 
     //Частное (0.5/0.4)
     public void testDiv() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+ 
         clickToLeftField();
 
         setToLeftField("0.5");
@@ -189,9 +179,7 @@ public class ExampleUnitTest {
 
     //Частное (0/5)
     public void testDiv1() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+       
         clickToLeftField();
 
         setToLeftField("0");
@@ -211,9 +199,7 @@ public class ExampleUnitTest {
 
     //Частное (10/5)
     public void testDiv2() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+       
         clickToLeftField();
 
         setToLeftField("10");
@@ -233,9 +219,7 @@ public class ExampleUnitTest {
 
     //Частное (5/1)
     public void testDiv3() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+       
         clickToLeftField();
 
         setToLeftField("5");
@@ -255,9 +239,8 @@ public class ExampleUnitTest {
 
     //Частное (5/10)
     public void testDiv4() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+        
+        
         clickToLeftField();
 
         setToLeftField("5");
@@ -277,8 +260,7 @@ public class ExampleUnitTest {
 
     //Частное (5/1000)
     public void testDiv5() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
+        
 
         clickToLeftField();
 
@@ -299,9 +281,7 @@ public class ExampleUnitTest {
 
     //Частное (5/0)
     public void testDiv6() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+  
         clickToLeftField();
 
         setToLeftField("5");
@@ -320,8 +300,6 @@ public class ExampleUnitTest {
     }
     //Произведение (0*5)
     public void testMult() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
 
         clickToLeftField();
 
@@ -343,9 +321,7 @@ public class ExampleUnitTest {
 
     //Произведение (1.5*10)
     public void testMult1() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
-
+        
         clickToLeftField();
 
         setToLeftField("1.5");
@@ -366,8 +342,7 @@ public class ExampleUnitTest {
 
     //Произведение (1.7*1.3)
     public void testMult2() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
+        
 
         clickToLeftField();
 
@@ -389,8 +364,7 @@ public class ExampleUnitTest {
 
     //Произведение (1*5)
     public void testMult3() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
+       
 
         clickToLeftField();
 
@@ -412,8 +386,7 @@ public class ExampleUnitTest {
 
     //Произведение (5*1)
     public void testMult4() {
-        MobileElement buttonTwo = (MobileElement) driver.findElementById("com.android.calculator2:id/digit_2");
-        buttonTwo.click();
+        
 
         clickToLeftField();
 
@@ -426,12 +399,27 @@ public class ExampleUnitTest {
         clickToMult();
 
 
-        MobileElement results = (MobileElement) driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
+        MobileElement results = (MobileElement) driver.findElementById("com.vbanthia.androidsampleapp:id/inputFieldLeft");
 
-        assertion(results, "5,00 * 1,00 = 5,00", "Результат должен быть равен: 5");
+        assertion(results, "0", "Должен быть доступен ввод только одного нуля без разделителя");
 
         Reset();
     }
+	
+	 @Test
+    //Сумма (Ввод нулей)
+    public void testAddition() {
+        
+
+        clickToLeftField();
+
+        setToLeftField("0");
+
+        MobileElement results = (MobileElement) driver.findElementById("com.vbanthia.androidsampleapp:id/resultTextView");
+
+        assertion(results, "0,00 + 0,00 = 0,00", "Результат должен быть равен: 0");
+
+        Reset();
 
     private void clickToDiv() {
         driver.findElementById("com.vbanthia.androidsampleapp:id/divisionButton").click();
@@ -474,3 +462,5 @@ public class ExampleUnitTest {
         driver.quit();
     }
 }
+
+
